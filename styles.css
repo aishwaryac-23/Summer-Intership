@@ -1,0 +1,198 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('train.jpg'); /* Background image */
+    /*background: linear-gradient(to bottom, #2980b9, #6dd5fa); /* Gradient background */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-size: cover;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin: 5px;
+    padding-top: 40px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+h2{
+    color:black;
+}
+/* Main content section styling */
+#main-content {
+    width: 80%;
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Login form section styling */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container input,
+.form-container select,
+.form-container button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.form-container input:focus,
+.form-container select:focus,
+.form-container button:hover {
+    border-color: #3498db;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.3);
+}
+
+/* Button Styles */
+button {
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button:active {
+    background-color: #1f78b4;
+}
+
+/* Ticket Section */
+#ticket-section {
+    background-color: rgba(52, 152, 219, 0.7);
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    color: #fff;
+}
+
+#ticket-details p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+#download-ticket {
+    background-color: #2ecc71;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#download-ticket:hover {
+    background-color: #27ae60;
+}
+
+/* Add train images */
+#main-content {
+    background-image: 
+        linear-gradient(
+            rgba(0.1, 0.0001, 0, 0.001), /* Darker but more transparent overlay*/
+            rgba(0.1, 0, 0, 0.001)
+        );
+    background-size: cover; /* Cover the whole section */
+    background-position: center; /* Center the image */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+#train-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Form labels */
+label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2980b9;
+    margin-bottom: 8px;
+    transition: color 0.3s;
+}
+
+label:hover {
+    color: #1f78b4;
+}
+
+/* Styling for the footer */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Style for the ticket preview */
+#ticket-details {
+    font-size: 20px;
+    color: #333;
+    text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    #main-content {
+        padding: 20px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+}

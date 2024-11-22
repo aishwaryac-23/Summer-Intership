@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Booking System</title>
+    <link rel="icon" href="trainlogo.jpg" type="image/png"> <!-- Use your image path here -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script> <!-- jsPDF CDN -->
+</head>
+<body>
+    <header>
+        <h1>Railway Reservation System</h1>
+    </header>
+
+    <div id="main-content">
+        <!-- Login Section -->
+        <div class="form-container" id="form-container">
+            <h2>Login</h2>
+            <br>
+            <form id="login-form">
+                <!--<label for="username">Username</label>-->
+                <input type="text" id="username" name="username"  placeholder="Enter your username" required />
+                <!--<label for="password">Password</label>-->
+                <input type="password" id="password" name="password"  placeholder="Enter your password" required />
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <!-- Booking Section -->
+        <div id="booking-page" class="form-container" style="display:none;">
+            <h2>Booking Details</h2>
+            <br>
+            <form id="booking-form">
+                <label for="train">Train:</label>
+                <select id="train" name="train" required>
+                    <option value="Express Train">Express Train</option>
+                    <option value="Super Fast Train">Super Fast Train</option>
+                    <option value="Local Train">Local Train</option>
+                </select>
+
+                <label for="date">Travel Date:</label>
+                <input type="date" id="date" name="date" required />
+
+                <!-- Seat Type Selection -->
+                <label for="seat-type">Seat Type:</label>
+                <select id="seat-type" name="seat-type" required>
+                    <option value="Window">Window</option>
+                    <option value="Aisle">Aisle</option>
+                    <option value="Middle">Middle</option>
+                </select>
+
+                <button type="submit">Book Ticket</button>
+            </form>
+        </div>
+
+        <!-- Ticket Preview Section -->
+        <div id="ticket-section" style="display:none;">
+            <h2>Your Booking Ticket</h2>
+            <div id="ticket-details">
+                <!-- Ticket details will be displayed here -->
+            </div>
+            <button id="download-ticket">Download Ticket</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Railway Reservation System</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Your JavaScript file -->
+</body>
+</html>
